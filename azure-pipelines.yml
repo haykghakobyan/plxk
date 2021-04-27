@@ -7,7 +7,13 @@
 pool:
   vmImage: 'ubuntu-latest'
 
-steps:
-- script: echo "Barev, world!"
+jobs:
+- job: Firstjob
+  timeoutInMinutes: 10
+  steps:
+  - bash: echo "Bareeeeev"
 
+- job: Secondjob
+  steps:
+  - bash: echo "Hazar barin"
 
